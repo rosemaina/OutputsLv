@@ -1,0 +1,285 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #FFFFFF;
+  font: 16px arial,sans-serif;
+  position: fixed;
+  height: 100%;
+  width: 98%;
+}
+
+.navigation {
+  background: transparent;
+  padding: 1em 1%;
+  display: flex;
+  align-items: right;
+  justify-content: space-between;
+}
+
+.navigation .icons {
+  display: flex;
+  align-items: right;
+}
+
+.navigation .icons .icon {
+  width: 1.5em;
+  height: 1.5em;
+  color: #000;
+  opacity: .85;
+  margin-left: 0.4em;
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain;
+  line-height: 15px;
+  padding-left: 15px;
+  vertical-align: middle;
+}
+
+.navigation .icons .icon.link {  
+  font-size: 13px; 
+  margin-top: 6px; 
+  margin-left: 16px; 
+}
+
+.navigation .icons .icon.link a {
+  text-decoration: none;
+  color: #555;
+  opacity: 55%;
+}
+
+.navigation .icons .icon.link a:hover{ 
+  cursor: pointer;
+  text-decoration: underline;
+  color: #222;
+  opacity: 85%;
+}
+
+.navigation .icons .icon.explore {
+  background-image: url(../images/options.png);
+  height: 1.2em;
+  color: #555;
+  opacity: 55%;
+  margin-left: 2em; 
+}
+
+.navigation .icons .icon.notif {
+  background-image: url(../images/notif.png);
+  color: #555;
+  opacity: 55%;
+}
+
+.navigation .icons .icon.user {
+  background-image: url(../images/user.png);
+  color: #555;
+  opacity: 55%;
+}
+
+.navigation .icons  .icon.user, .icon.notif, .icon.explore, .link :hover{ 
+  cursor: pointer;
+  text-decoration: underline;
+  color: #222;
+  opacity: 85%;
+}
+
+.main_body {
+  width: 100%;
+  margin: 260px;
+  margin-top: 135px;
+  padding-bottom: 2.5em;
+}
+
+.main_body .google {
+  width: 40%;
+  margin-top: 0.8em;
+  margin-left: 4.7em;
+  background: #FFFFFF;
+  color: #262626;
+  
+}
+
+.main_body .google .header {
+  padding: .5em 1.5em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main_body .google .header .the_user {
+  display: flex;
+  align-items: center;
+}
+
+.main_body .logo {
+  margin-top: 200px;
+  width: 40em;
+  height: 5.7em;
+  background-image: url(../images/logo.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.main_body .google .search {
+  background: #FFFFFF;
+  border: 1px solid #E6E6E6;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: .2em .5em;
+  margin-top: 1.2em;
+  margin-left: 4.0em;
+  width: 36em;
+  height: 2.4em;
+  }
+
+.main_body .google .search .search_icon {
+  width: .8em;
+  height: 2em; 
+  margin-right: .5em;
+  border-radius: .2em;
+  background-image: url(../images/micro.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain;
+}
+
+.main_body .google .search .search_box {
+  color: #222;   
+  font-size: 16px; 
+  padding: .2em .5em; 
+  width: 100%;
+  height: 100%;
+  border: none;
+  z-index: 6;
+  outline: none;
+  cursor: text;
+  -webkit-appearance: textarea;
+}
+
+.main_body .google .search_buttons {
+  display: inline-flex;
+  margin: 1em;
+  margin-left: 9em;
+  background: #FFFFFF;
+  color: #262626;
+  align-items: center;
+  justify-content: center;
+  padding: .2em .5em;
+  padding-top: 10px;
+  width: 25em;
+  text-align: -webkit-center;
+  vertical-align: middle;
+}
+
+.main_body .google .google-swahili-version {
+  /*display: inline-flex;*/
+  margin-left: 12em;
+  margin-top: 1em;
+  align-items: center;
+  justify-content: center;
+  padding: .1em .1em;
+  padding-right: 20px;
+  text-align: -webkit-center;
+  vertical-align: middle;
+}
+
+.main_body .google .search_btn {
+  display: flex;
+  background: #EEE;
+  border: none;
+  border-radius: 2px;
+  padding-bottom: 2.5em;
+  color: #777;
+  height: 36px;
+  font-family: arial,sans-serif;
+  font-size: 13px;
+  font-weight: bold;
+  margin: 11px 4px;
+  min-width: 54px;
+  padding: 0 16px;
+  text-align: center;
+}
+
+.main_body .google .search .search_box:focus {
+  border: none;
+  outline: none;
+}
+
+.main_body .google .search_btn:hover { 
+  background: #eee;
+  border: 1px solid #ccc;
+  color: #222;
+  font-style: bolder;
+  font-weight: 800px;
+}
+
+.header {
+  top: 0;
+  margin-top: 10px;
+  font-size: 10pt;
+  height: 40px;
+  position: absolute;
+  width: 120%;
+  /*border: 1px solid #ddd;*/
+}
+
+.header .header_links {
+  padding: 10px;
+  /*margin-top: -2.5em;  */
+  /*width: 100%;*/
+  display: flex;
+  left: 0px;
+}
+
+.footer {
+    bottom: 0;
+  font-size: 10pt;
+  height: 40px;
+  position: absolute;
+  width: 120%;
+  background: #f2f2f2;
+  color: #262626;
+  border: 1px solid #ddd;
+}
+
+.footer .footer_links {
+  display: flex;
+  padding: 10px;
+  margin-top: -2.5em;  
+  width: 100%;
+}
+
+.footer .footer_links .links_left{
+  display: flex;
+  left: 0px;
+}
+
+.footer .footer_links .links_right{
+  display: flex;
+  margin-left: 950px;
+}
+
+.footer .footer_links .f_link{
+  display: flex;
+  margin-left: 1.5em;
+  margin-top: 2.5em;
+  font-style: bolder;
+  font-weight: 800px;
+}
+
+.footer .footer_links .f_link a {
+  text-decoration: none;
+  color: #666;
+  opacity: 55%;
+  font-size: 15px;
+}
+
+.footer .footer_links .f_link a:hover{ 
+  cursor: pointer;
+  text-decoration: underline;
+  color: #555;
+  opacity: 85%;
+
+}
+
